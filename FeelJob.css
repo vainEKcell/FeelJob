@@ -9,7 +9,7 @@ body {
     zoom: 1;
 
     background-color: #fff;
-    background-image: url('png/photomode_05012023_133752.png');
+    background-image: url('/./photomode_05012023_133752.png');
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
@@ -87,6 +87,7 @@ li a:hover {
     top: 15px;
     color: #8b1dff;
     font-family: "Microsoft YaHei UI";
+    text-align: center;
 }
 
 .btn {
@@ -103,8 +104,9 @@ li a:hover {
     width: 20em;
     height: 5em;
 
-    margin-left: 4em;
-    margin-top: 10em;
+    margin-right: 15em;
+    margin-left: -45%;
+    margin-top: 30em;
     margin-bottom: 10em;
     color: #4a33ff;
     border-radius: 35px;
@@ -143,11 +145,25 @@ li a:hover {
 }
 
 .left_p {
-    margin-top: -70.5em;
-    margin-left: 5em;
+    margin-top: -40em;
+    margin-left: 4em;
+    margin-right: 35em;
 
     width: 15em;
-    height: 16em;
+    height: 17em;
+    border-radius: 50px;
+    border: none;
+    padding: 25px 110px;
+    /*position: fixed;*/
+    transition-duration: 0.5s;
+}
+
+.left_p2 {
+    margin-top: -69em;
+    margin-right: 6.5em;
+
+    width: 15em;
+    height: 35em;
     border-radius: 50px;
     border: none;
     padding: 25px 110px;
@@ -156,7 +172,7 @@ li a:hover {
 }
 
 .right_p {
-    margin-left: 4em;
+    margin-left: 30em;
 
     width: 20em;
     height: 57em;
