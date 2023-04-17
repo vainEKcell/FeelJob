@@ -9,7 +9,7 @@ body {
     zoom: 1;
 
     background-color: #fff;
-    background-image: url('/./photomode_05012023_133752.png');
+    background-image: url('/FeelJob/photomode_05012023_133752.png');
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
@@ -42,9 +42,9 @@ body {
 }
 
 nav {
+    z-index: 10;
     position: sticky;
     list-style-type: none;
-    z-index: 2;
 
     padding: 0;
     top:0;
@@ -90,40 +90,6 @@ li a:hover {
     text-align: center;
 }
 
-.btn {
-    flex-basis: 40%;
-
-    background-image: linear-gradient( 135deg, rgb(250, 179, 255) 20%, #57ffee 70%, #4b35ff 100%);
-    background-position: right;
-    background-size: 150%;
-    cursor: pointer;</* 设置鼠标悬停icon */>
-
-    text-align: center;
-    transition-duration: 0.7s;
-    padding: 20px;
-    width: 20em;
-    height: 5em;
-
-    margin-right: 15em;
-    margin-left: -45%;
-    margin-top: 30em;
-    margin-bottom: 10em;
-    color: #4a33ff;
-    display: inline-block;
-    border-radius: 35px;
-    border-style: none;
-    outline: none;
-}
-
-.btn2:hover {
-    flex-basis: 40%;
-    box-shadow: 0 10px 20px 0 rgba(47,55,213,0.3);
-    background-image: linear-gradient( 135deg, #fab3ff 20%, rgb(65, 255, 255) 70%, #4c36ff 100%);
-    background-position: left;
-    transform: scale(1.05);
-    transition: 0.6s;
-}
-
 .wallpaper {
     display: flex;
     z-index: 5;
@@ -146,7 +112,7 @@ li a:hover {
 }
 
 .left_p {
-    margin-top: -40em;
+    margin-top: -40.5em;
     margin-left: 4em;
     margin-right: 35em;
 
@@ -160,8 +126,8 @@ li a:hover {
 }
 
 .left_p2 {
-    margin-top: -69em;
-    margin-right: 6.5em;
+    margin-top: -37.6em;
+    margin-right: 31em;
 
     width: 15em;
     height: 35em;
@@ -224,4 +190,83 @@ li a:hover {
     padding: 20px 100px;
     /*position: fixed;*/
     transition-duration: 0.5s;
+}
+
+.img {
+    background: #abc1ee;
+    border-radius: 50px;
+
+    margin-top: 3em;
+    margin-left: 2em;
+    float: left;
+    width: 59em;
+    height: 40em;
+    text-align: center;
+}
+
+.img img{
+    z-index: 3;
+    border-radius: 50px;
+
+    width: 59em;
+    height: 40em;
+}
+
+.img_btn {
+    z-index: 5;
+    display: none;
+    position: relative;
+    margin-top: -30em;
+
+    width: 40px;
+    height: 100px;
+
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.img_btn_r {
+    float: left;
+}
+
+.img_btn_l {
+    float: right;
+}
+
+.img:hover .img_btn {
+    display: block;
+    opacity: 1;
+}
+
+.btn {
+    flex-basis: 40%;
+
+    background-image: linear-gradient( 135deg, rgb(250, 179, 255) 20%, #57ffee 70%, #4b35ff 100%);
+    background-position: right;
+    background-size: 150%;
+    cursor: pointer;</* 设置鼠标悬停icon */>
+
+    text-align: center;
+    transition-duration: 0.7s;
+    padding: 20px;
+    width: 20em;
+    height: 5em;
+
+    margin-left: 10%;
+    margin-top: 30em;
+    margin-bottom: 10em;
+    color: #4a33ff;
+    display: inline-block;
+    border-radius: 35px;
+    border-style: none;
+    outline: none;
+}
+
+.btn:hover {
+    flex-basis: 40%;
+    box-shadow: 0 10px 20px 0 rgba(47,55,213,0.3);
+    background-image: linear-gradient( 135deg, #fab3ff 20%, rgb(65, 255, 255) 70%, #4c36ff 100%);
+    background-position: left;
+    transform: scale(1.05);
+    transition: 0.6s;
 }

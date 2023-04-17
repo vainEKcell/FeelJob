@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://cdn.jsdiver.net/npm/vue/dist/vue.js"></script> <!--导入开发版vue-->
     <meta charset="UTF-8">
     <title>FeelJob Web studio</title>
     <link rel="stylesheet" href="FeelJob.css">
-    <!--<link rel="script" href="FeelJob.js">      对接js文件，日后再说       -->
+    <link rel="script" href="FeelJob.js">      <!--对接js文件-->
     <h1 class = "h1">Welcome to FeelJob minecraft network station</h1>
     <nav style="font-size: larger">
         <li><a href="#home" style="font-family: 'Comic Sans MS'">introduce</a></li>
@@ -14,7 +15,7 @@
     </nav>
 
 </head>
-<body class ="img">
+<body>
     <div class = "container" style="font-size: larger">
         <div class = "wallpaper left_p p">
             <p style="line-height: 3">您好，这是一个我的世界服务器网站。您可以和您的朋友一起畅玩我都世界多人联机板块。
@@ -50,11 +51,18 @@
             <button class="btn_p2">11</button>
             <button class="btn_p2">12</button>
             <button class="btn_p2">13</button>
-
         </div>
+       <div class="img">
+           <img src="1.jfif" style="display:block">
+           <img src="2.jfif" style="display:none">
+           <img src="3.jfif" style="display:none">
+           <img src="4.jfif" style="display:none">
+           <button class="img_btn img_btn_r" id="btnLast">上一张</button>
+           <button class="img_btn img_btn_l" id="btnNext">下一张</button>
+       </div>
 
         <a href ="signin.html">
-            <button class ="btn btn2" style="font-family: 'Comic Sans MS'">Go Explore</button>
+            <button class ="btn" style="font-family: 'Comic Sans MS'">Go Explore</button>
         </a>
     </div>
 </body>
