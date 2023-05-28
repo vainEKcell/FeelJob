@@ -1,0 +1,132 @@
+body {
+    position: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    z-index: -10;
+    zoom: 1;
+
+    background-color: #fff;
+    background-image: url('../img/photomode_05012023_133752.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 0;
+    background-attachment: fixed;
+
+}
+
+nav {
+    z-index: 10;
+    position: sticky;
+    list-style-type: none;
+
+    padding: 0;
+    top:0;
+    width: 100px;
+    margin-top: -10%;
+
+    background-image: linear-gradient( 45deg, rgba(107, 115, 255) 10%, rgb(250, 179, 255) 100%);
+    border-radius: 10px;
+}
+
+li a {
+    display: flex;
+    position: center;
+    color: rgb(211, 52, 255);
+
+    border-radius: 10px;
+    height: 145px;
+    padding-top: 50px;
+
+    text-align: center;
+    text-decoration: none;
+
+    transform: translate(0%,-10%);
+    transition-duration: 0.6s;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: rgba(152, 156, 255, 0.3);
+    color: #d334ff;
+    background-image: linear-gradient( 135deg, rgb(250, 179, 255) 10%, rgb(87, 255, 238) 100%);
+    box-shadow: 0 10px 20px 0 rgba(22, 28, 144, 0.3);
+
+    text-decoration: none;
+    transform: scale(1.1);
+    transition-duration: 0.6s;
+}
+
+.btn {
+    flex-basis: 40%;
+    z-index: 1;
+
+    background-image: linear-gradient( 135deg, rgb(250, 179, 255) 20%, #57ffee 70%, #4b35ff 100%);
+    background-position: right;
+    background-size: 150%;
+    cursor: pointer;</* 设置鼠标悬停icon */>
+
+    text-align: center;
+    transition-duration: 0.7s;
+    padding: 20px;
+    width: 80%;
+    height: 5em;
+
+    position: center;
+    margin-top: 3%;
+    margin-left: 14%;
+    color: #4a33ff;
+    display: inline-block;
+    border-radius: 10px;
+    border-style: none;
+    outline: none;
+}
+
+.btn:hover {
+    flex-basis: 40%;
+    box-shadow: 0 10px 20px 0 rgba(47,55,213,0.3);
+    background-image: linear-gradient( 135deg, #fab3ff 20%, rgb(65, 255, 255) 70%, #4c36ff 100%);
+    background-position: left;
+
+    transform: scale(1.05);
+    transition: 0.6s;
+}
+
+.wallpaper {
+    display: flex;
+    z-index: 1;
+    margin-top: -30%;
+    margin-left: 13%;
+
+    padding: 20px;
+    width: 80%;
+    height: 20em;
+    border-radius: 15px;
+
+    background-color: #8b1dff;
+    background-image: linear-gradient( 135deg, #f9a7ff 10%, rgb(66, 255, 255) 100%, rgb(141, 146, 255) 70%);
+    transition-duration: 0.5s;
+    background-size: 200%;
+}
+
+.wallpaper:hover {
+    animation: gradient 5s ease infinite;
+    background-image: linear-gradient( 135deg, #f9a6ff 10%, rgb(65, 255, 255) 50%, rgb(140, 145, 255) 100%);
+    background-position: right;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.31);
+
+    transform: scale(1.01);
+    transition-duration: 0.5s;
+    text-decoration: none;
+    outline:none;
+}
+
+.p {
+    font-family: "Comic Sans MS";
+    font-size: large;
+    text-decoration-line: none;
+}

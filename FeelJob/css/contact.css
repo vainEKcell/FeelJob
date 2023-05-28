@@ -1,0 +1,161 @@
+body {
+    position: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    z-index: -10;
+    zoom: 1;
+
+    background-color: #fff;
+    <!--background-image: url('../img/photomode_05012023_133752.png');-->
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 0;
+    background-attachment: fixed;
+
+}
+
+.h {
+    flex-basis: 40%;
+
+    margin-left:325px;
+    font: 100px 'Trebuchet MS';
+    display: block;
+    position: relative;
+    left: -10%;
+    padding: 0;
+
+    background: linear-gradient(45deg, #fab3ff, #41ffff, rgb(124, 133, 255)); /* 设置渐变背景色 */
+    -webkit-background-clip: text; /* 设置背景图像的填充方式，使渐变只填充文字 */
+    -webkit-text-fill-color: transparent; /* 设置文字颜色为透明，使文字显示渐变效果 */
+}
+
+.container {
+    margin-top: -20em;
+}
+#chat-box {
+    position: relative;
+    display: flex;
+    z-index: 1;
+    margin-top: -50%;
+    margin-left: 50%;
+
+    height: 20%;
+    width: 40%;
+    overflow-y: scroll;
+		}
+#user-list {
+    position: relative;
+    display: flex;
+
+    height: 40%;
+    overflow-y: scroll;
+}
+
+nav {
+    z-index: 10;
+    position: sticky;
+    list-style-type: none;
+
+    padding: 0;
+    top:0;
+    width: 100px;
+    margin-top: -11em;
+
+    background-image: linear-gradient( 45deg, rgba(107, 115, 255) 10%, rgb(250, 179, 255) 100%);
+    border-radius: 10px;
+}
+
+li a {
+    display: flex;
+    position: center;
+    color: rgb(211, 52, 255);
+
+    border-radius: 10px;
+    height: 145px;
+    padding-top: 50px;
+
+    text-align: center;
+    text-decoration: none;
+
+    transform: translate(0%,-10%);
+    transition-duration: 0.6s;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: rgba(152, 156, 255, 0.3);
+    color: #d334ff;
+    background-image: linear-gradient( 135deg, rgb(250, 179, 255) 10%, rgb(87, 255, 238) 100%);
+    box-shadow: 0 10px 20px 0 rgba(22, 28, 144, 0.3);
+
+    text-decoration: none;
+    transform: scale(1.1);
+    transition-duration: 0.6s;
+}
+
+.p {
+    top: 15px;
+    color: #8b1dff;
+    font-family: "Microsoft YaHei UI";
+    text-align: center;
+}
+
+.wallpaper {
+    display: flex;
+    z-index: 5;
+    margin-top: -30em;
+
+    background-color: #8b1dff;
+    background-image: linear-gradient( 135deg, #f9a7ff 10%, rgb(66, 255, 255) 100%, rgb(141, 146, 255) 70%);
+    background-size: 200%;
+}
+
+.wallpaper:hover {
+    animation: gradient 5s ease infinite;
+    background-image: linear-gradient( 135deg, #f9a6ff 10%, rgb(65, 255, 255) 50%, rgb(140, 145, 255) 100%);
+    background-position: right;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.31);
+
+    transform: scale(1.01);
+    transition-duration: 0.5s;
+    text-decoration: none;
+    outline:none;
+}
+.btn {
+    flex-basis: 40%;
+
+    background-image: linear-gradient( 135deg, rgb(250, 179, 255) 20%, #57ffee 70%, #4b35ff 100%);
+    background-position: right;
+    background-size: 150%;
+    cursor: pointer;</* 设置鼠标悬停icon */>
+
+    text-align: center;
+    transition-duration: 0.7s;
+    padding: 20px;
+    width: 20em;
+    height: 5em;
+
+    'margin-left: 10%;
+    'margin-top: 30em;
+    'margin-bottom: 10em;
+    color: #4a33ff;
+    display: inline-block;
+    border-radius: 35px;
+    border-style: none;
+    outline: none;
+}
+
+.btn:hover {
+    flex-basis: 40%;
+    box-shadow: 0 10px 20px 0 rgba(47,55,213,0.3);
+    background-image: linear-gradient( 135deg, #fab3ff 20%, rgb(65, 255, 255) 70%, #4c36ff 100%);
+    background-position: left;
+
+    transform: scale(1.05);
+    transition: 0.6s;
+}

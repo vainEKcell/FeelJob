@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chat Room</title>
+	<link rel="stylesheet" href="../css/contact.css">
+	<nav style="font-size: larger">
+        <li><a href="FeelJob.html" style="font-family: 'Comic Sans MS'">home</a></li>
+        <li><a href="#news" style="font-family: 'Comic Sans MS'">News</a></li>
+        <li><a href="contact.html" style="font-family: 'Comic Sans MS'">Contact</a></li>
+        <li><a href="about.html" style="font-family: 'Comic Sans MS'">About</a></li>
+    </nav>
+</head>
+<body>
+	<h1 class="h">Chat Room</h1>
+	<div id="login">
+		<h2 class="h">Login</h2>
+		<input class="input" type="text" id="username" placeholder="Username">
+		<input class="input" type="password" id="password" placeholder="Password">
+		<button  class="btn" id="btn-login">Login</button>
+	</div>
+	<div id="chat-room" style="display:none;">
+		<h2 class="h">Chat Room</h2>
+		<div class="h" id="user-list"></div>
+		<div class="h" id="chat-messages"></div>
+		<input type="text" id="message" placeholder="Type your message here">
+		<button class="btn" id="btn-send">Send</button>
+	</div>
+	<div id="message-board" style="display:none;">
+		<h2>Message Board</h2>
+		<div id="message-list"></div>
+		<input type="text" id="board-message" placeholder="Type your message here">
+		<button id="btn-post">Post</button>
+	</div>
+	<script src="../js/contact.js"></script>
+</body>
+</html>

@@ -9,7 +9,7 @@ body {
     zoom: 1;
 
     background-color: #fff;
-    background-image: url('/FeelJob/photomode_05012023_133752.png');
+    background-image: url('../img/photomode_05012023_133752.png');
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
@@ -61,7 +61,7 @@ li a {
     color: rgb(211, 52, 255);
 
     border-radius: 10px;
-    height: 150px;
+    height: 145px;
     padding-top: 50px;
 
     text-align: center;
@@ -105,6 +105,7 @@ li a:hover {
     background-image: linear-gradient( 135deg, #f9a6ff 10%, rgb(65, 255, 255) 50%, rgb(140, 145, 255) 100%);
     background-position: right;
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.31);
+
     transform: scale(1.01);
     transition-duration: 0.5s;
     text-decoration: none;
@@ -156,7 +157,7 @@ li a:hover {
     cursor: pointer;</* 设置鼠标悬停icon */>
 
     text-align: center;
-    transition-duration: 0.7s;
+    transition-duration: 0.2s;
     padding: 20px;
     width: 120%;
     height: 120px;
@@ -175,8 +176,8 @@ li a:hover {
     opacity: unset;
 
     text-decoration: none;
-    transform: scale(1.15);
-    transition-duration: 0.2s;
+    transform: scale(1.2);
+    transition-duration: 0.4s;
 }
 
 
@@ -213,29 +214,53 @@ li a:hover {
 }
 
 .img_btn {
+    flex-basis: 40%;
+
     z-index: 5;
     display: none;
     position: relative;
     margin-top: -30em;
 
-    width: 40px;
-    height: 100px;
+    width: 50px;
+    height: 120px;
 
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+    background-image: linear-gradient( 135deg, rgba(250, 179, 255,0.7) 20%, rgba(75, 53, 255, 0.7) 100%);
+    background-position: right;
+
+    padding: 25px 11px;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 5px;
+    transition: 0.4s;
 }
 
-.img_btn_r {
-    float: left;
+.img_btn:hover {
+    flex-basis: 40%;
+    background-image: linear-gradient( 135deg, rgba(250, 179, 255,0.7) 20%, rgba(75, 53, 255, 0.7) 100%);
+    background-position: left;
+
+    transform: scale(1.1);
+    transition: 0.4s;
 }
 
-.img_btn_l {
-    float: right;
+.img_btn span{
+    writing-mode: vertical-lr; /* 竖直排列，从左到右 */
+    transform: rotate(0deg); /* 调整文字方向 */
+    text-align: center;
+    color: rgb(211, 52, 255,1);
+    opacity: 1;
 }
 
 .img:hover .img_btn {
     display: block;
-    opacity: 1;
+}
+
+.img_btn_l {
+    float: left;
+}
+
+.img_btn_r {
+    float: right;
 }
 
 .btn {
@@ -267,6 +292,7 @@ li a:hover {
     box-shadow: 0 10px 20px 0 rgba(47,55,213,0.3);
     background-image: linear-gradient( 135deg, #fab3ff 20%, rgb(65, 255, 255) 70%, #4c36ff 100%);
     background-position: left;
+
     transform: scale(1.05);
     transition: 0.6s;
 }

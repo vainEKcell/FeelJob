@@ -4,16 +4,17 @@
     <script src="https://cdn.jsdiver.net/npm/vue/dist/vue.js"></script> <!--导入开发版vue-->
     <meta charset="UTF-8">
     <title>FeelJob Web studio</title>
-    <link rel="stylesheet" href="FeelJob.css">
-    <link rel="script" href="FeelJob.js">      <!--对接js文件-->
+    <link rel="stylesheet" href="../css/main .css">
+    <link rel="stylesheet" href="../css/FeelJob.css">
+    <script src="../js/FeelJob.js"></script>      <!--对接js文件-->
+    <link rel="script" href="../plugs/mc_version.vue">   <!--接入vue组件-->
     <h1 class = "h1">Welcome to FeelJob minecraft network station</h1>
     <nav style="font-size: larger">
-        <li><a href="#home" style="font-family: 'Comic Sans MS'">introduce</a></li>
+        <li><a href="FeelJob.html" style="font-family: 'Comic Sans MS'">home</a></li>
         <li><a href="#news" style="font-family: 'Comic Sans MS'">News</a></li>
-        <li><a href="#contact" style="font-family: 'Comic Sans MS'">Contact</a></li>
-        <li><a href="#about" style="font-family: 'Comic Sans MS'">About</a></li>
+        <li><a href="contact.html" style="font-family: 'Comic Sans MS'">Contact</a></li>
+        <li><a href="about.html" style="font-family: 'Comic Sans MS'">About</a></li>
     </nav>
-
 </head>
 <body>
     <div class = "container" style="font-size: larger">
@@ -53,12 +54,20 @@
             <button class="btn_p2">13</button>
         </div>
        <div class="img">
-           <img src="1.jfif" style="display:block">
-           <img src="2.jfif" style="display:none">
-           <img src="3.jfif" style="display:none">
-           <img src="4.jfif" style="display:none">
-           <button class="img_btn img_btn_r" id="btnLast">上一张</button>
-           <button class="img_btn img_btn_l" id="btnNext">下一张</button>
+           <img src="../img/1.jfif" style="display:block">
+           <img src="../img/2.jfif" style="display:none">
+           <img src="../img/3.jfif" style="display:none">
+           <img src="../img/4.jfif" style="display:none">
+           <button class="img_btn img_btn_l" id="btnLast">
+               <span>
+                   上一张
+               </span>
+           </button>
+           <button class="img_btn img_btn_r" id="btnNext">
+               <span>
+                   下一张
+               </span>
+           </button>
        </div>
 
         <a href ="signin.html">
